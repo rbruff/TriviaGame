@@ -1,6 +1,7 @@
-body{
+body {
     background-color: black;
 }
+
 .container-card {
     background-color: white;
     width: 900px;
@@ -8,27 +9,34 @@ body{
     border: solid black 1px;
     margin: auto;
 }
-.remaining-time{
+
+.remaining-time {
     color: white;
 }
-h1{
+
+h1 {
     color: white;
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-.pic img{
+
+.pic img {
     width: 100%;
 }
-.question-card{
+
+.question-card {
     padding: 80px 20px 80px 20px;
 }
+
 .btn {
     padding: 20px;
     margin: 20px;
 }
-.container-opt{
+
+.container-opt {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
