@@ -20,11 +20,18 @@
   <!-- timer -->
   <h2 class="remaining-time">Time Remaining:
     <span id="timer">10</span> sec</h2>
-  <div class="container-card">
+
+    <div id="start-card">
+     <div class="container">
+      <button type="button" class="btn btn-success btn-lg center" id="start">Start</button>
+     </div>
+    </div>
+
+    <div class="container-card">
     <div class="row">
       <!-- picture side -->
       <div class="pic col-md-6">
-        <img src="assets/images/350x350.png" alt="placeholder">
+        <img src="assets/images/350x350.png" alt="celebrity photo" id="celeb-pic">
       </div>
       <!-- question side -->
       <div class="question-card col-md-6">
@@ -32,16 +39,16 @@
 
         <div class="container-opt">
           <!-- buttons -->
-          <button type="button" class="btn btn-outline-dark">
+          <button type="button" class="btn btn-outline-dark options">
             <span id="opt-1">Option 1</span>
           </button>
-          <button type="button" class="btn btn-outline-dark">
+          <button type="button" class="btn btn-outline-dark options">
             <span id="opt-2">Option 2</span>
           </button>
-          <button type="button" class="btn btn-outline-dark">
+          <button type="button" class="btn btn-outline-dark options">
             <span id="opt-3">Option 3</span>
           </button>
-          <button type="button" class="btn btn-outline-dark">
+          <button type="button" class="btn btn-outline-dark options">
             <span id="opt-4">Option 4</span>
           </button>
         </div>

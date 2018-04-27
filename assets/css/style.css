@@ -2,12 +2,27 @@ body {
     background-color: black;
 }
 
+.center {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    width: 100%
+}
 .container-card {
     background-color: white;
     width: 900px;
     height: 450px;
     border: solid black 1px;
     margin: auto;
+}
+
+#start-card {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    height: 450px;
+    
 }
 
 .remaining-time {
@@ -29,6 +44,11 @@ h2 {
 
 .question-card {
     padding: 80px 20px 80px 20px;
+}
+
+#celeb-pic {
+    height: 100%;
+    width: 100%;
 }
 
 .btn {

@@ -1,4 +1,12 @@
+$('#start').click(function(){
+    $('#start-card').remove();
+    game.loadQuestion();
+});
 
+// $(".options").click(function(){
+//     console.log($(this.attr(id)));
+//     game.clicked();
+// });
 
 var questions =[{
     question : "How old is Quavo from the Migos?",
@@ -6,9 +14,9 @@ var questions =[{
     option2 : "26",
     option3 : "29",
     option4 : "32",
-    answer : "2",
-    image: "../images/171106-Quavo-DX-Mike-Lavin-800x600.jpg",
-    gif: "../images/giphy.gif"
+    answer : "option2",
+    image: "assets/images/171106-Quavo-DX-Mike-Lavin-800x600.jpg",
+    gif: "assets/images/giphy.gif"
 
 }, {
     question : "How old is Cardi B?",
@@ -17,8 +25,8 @@ var questions =[{
     option3 : "23",
     option4 : "25",
     answer : "4",
-    image: "../images/cardi-b-grammys-2018-01.jpg",
-    gif: "../images/giphy (1).gif"
+    image: "assets/images/cardi-b-grammys-2018-01.jpg",
+    gif: "assets/images/giphy (1).gif"
 }, {
     question : "How old is Future?",
     option1 : "31",
@@ -26,8 +34,8 @@ var questions =[{
     option3 : "37",
     option4 : "41",
     answer : "2",
-    image: "../images/151208_Future_608.jpg",
-    gif: "../images/giphy (2).gif"
+    image: "assets/images/151208_Future_608.jpg",
+    gif: "assets/images/giphy (2).gif"
 }, {
     question : "How old is Nicki Minaj?",
     option1 : "29",
@@ -35,8 +43,8 @@ var questions =[{
     option3 : "35",
     option4 : "38",
     answer : "3",
-    image: "../images/nicki-minaj-pregnancy-rumors__oPt.jpg",
-    gif: "../images/giphy (3).gif"
+    image: "assets/images/nicki-minaj-pregnancy-rumors__oPt.jpg",
+    gif: "assets/images/giphy (3).gif"
 }, {
     question : "How old is A$AP Rocky?",
     option1 : "23",
@@ -44,8 +52,8 @@ var questions =[{
     option3 : "27",
     option4 : "39",
     answer : "4",
-    image: "../images/asap-rocky.jpg",
-    gif: "../images/giphy (4).gif"
+    image: "assets/images/asap-rocky.jpg",
+    gif: "assets/images/giphy (4).gif"
 }, {
     question : "How old is Lil Wayne?",
     option1 : "35",
@@ -53,8 +61,8 @@ var questions =[{
     option3 : "41",
     option4 : "44",
     answer : "1",
-    image: "../images/lilWayne1.jpeg",
-    gif: "../images/giphy (5).gif" 
+    image: "assets/images/lilWayne1.jpeg",
+    gif: "assets/images/giphy (5).gif" 
 }, {
     question : "How old is Drake?",
     option1 : "29",
@@ -62,8 +70,8 @@ var questions =[{
     option3 : "33",
     option4 : "35",
     answer : "2",
-    image: "../images/drake-beard-1448454174-view-0.png",
-    gif: "../images/giphy (6).gif" 
+    image: "assets/images/drake-beard-1448454174-view-0.png",
+    gif: "assets/images/giphy (6).gif" 
 }, {
     question : "How old is Kim Kardashian?",
     option1 : "28",
@@ -71,8 +79,8 @@ var questions =[{
     option3 : "37",
     option4 : "39",
     answer : "3",
-    image: "../images/kim-k-0fc05ec1-6159-422f-9626-2423767fd542.jpg",
-    gif: "../images/giphy (7).gif" 
+    image: "assets/images/kim-k-0fc05ec1-6159-422f-9626-2423767fd542.jpg",
+    gif: "assets/images/giphy (7).gif" 
 }, {
     question : "How old is Kanye?",
     option1 : "31",
@@ -80,8 +88,8 @@ var questions =[{
     option3 : "38",
     option4 : "40",
     answer : "4",
-    image: "../images/070816-chicago-kanye-west.jpg",
-    gif: "../images/giphy (8).gif" 
+    image: "assets/images/070816-chicago-kanye-west.jpg",
+    gif: "assets/images/giphy (8).gif" 
 }, {
     question : "How old is Jay Z?",
     option1 : "45",
@@ -89,8 +97,8 @@ var questions =[{
     option3 : "51",
     option4 : "444",
     answer : "2",
-    image: "../images/jayz.jpeg",
-    gif: "../images/giphy (9).gif" 
+    image: "assets/images/jayz.jpeg",
+    gif: "assets/images/giphy (9).gif" 
 }, {
     question : "How old is Kendrick Lamar?",
     option1 : "24",
@@ -98,8 +106,8 @@ var questions =[{
     option3 : "30",
     option4 : "33",
     answer : "3",
-    image: "../images/kendrick.jpeg",
-    gif: "../images/giphy (10).gif" 
+    image: "assets/images/kendrick.jpeg",
+    gif: "assets/images/giphy (10).gif" 
 }, {
     question : "How old is Beyonce?",
     option1 : "33",
@@ -107,8 +115,8 @@ var questions =[{
     option3 : "39",
     option4 : "41",
     answer : "2",
-    image: "../images/beyonce.jpg",
-    gif: "../images/giphy (11).gif" 
+    image: "assets/images/beyonce.jpg",
+    gif: "assets/images/giphy (11).gif" 
 }, {
     question : "How old is Rihanna?",
     option1 : "26",
@@ -116,27 +124,14 @@ var questions =[{
     option3 : "30",
     option4 : "32",
     answer : "3",
-    image: "../images/rihanna.jpg",
-    gif: "../images/giphy (12).gif" 
+    image: "assets/images/rihanna.jpg",
+    gif: "assets/images/giphy (12).gif" 
 }];
-
-// var currentQuestion = 0;
-// var correct = 0;
-// var incorrect = 0;
-// var remainingQuest = 13;
-
-
-// var container = document.getElementsByClassName('question')
-// var questionEl = document.getElementsByClassName('question');
-// var opt1 = document.getElementById('opt-1');
-// var opt2 = document.getElementById('opt-2');
-// var opt3 = document.getElementById('opt-3');
-// var opt3 = document.getElementById('opt-4');
 
 var game = {
     questions: questions,
     currentQuestion: 0,
-    timer: 5,
+    timer: 10,
     correct: 0,
     incorrect: 0,
     // timer method
@@ -148,10 +143,15 @@ var game = {
             game.timeUp();
         }
     },
-    
+    // setting timer interval for 1000mili sec/ 1 sec and printing question to page
     loadQuestion: function(){
         timer = setInterval(game.countdown,1000);
-        $('.question').html(questions[game.currentQuestion].question)
+        $('.question').html(questions[game.currentQuestion].question);
+        $('#opt-1').html(questions[game.currentQuestion].option1);
+        $('#opt-2').html(questions[game.currentQuestion].option2);
+        $('#opt-3').html(questions[game.currentQuestion].option3);
+        $('#opt-4').html(questions[game.currentQuestion].option4);
+        $('#celeb-pic').attr("src", questions[game.currentQuestion].image)
 
     },
     nextQuestion: function(){
@@ -164,6 +164,8 @@ var game = {
 
     },
     clicked: function(){
+        clearInterval(timer);
+        
 
     },
     answeredCorrectly: function(){
